@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+        Branch Cleanup
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-800 text-white">
+<div class="flex h-screen">
+    <!-- Sidebar -->
+    <div class="w-64 bg-gray-900 p-6">
+        <div class="flex items-center space-x-2 mb-5">
+            <img alt="Logo placeholder" class="h-8 w-8" height="32" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-KPXxSzoVUIPTUNib2xq9pEvF/user-Zj1mcxNf0TsKEfLTplOepyhW/img-jb5iHPxG0ojjSofrEhcxOS82.png?st=2024-03-03T16%3A22%3A03Z&amp;se=2024-03-03T18%3A22%3A03Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-03-02T18%3A22%3A14Z&amp;ske=2024-03-03T18%3A22%3A14Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=LNs/qmcrHYVOD2y%2BSMjj3r1nw%2BAtfkeep69NcztSpwU%3D" width="32"/>
+            <span class="font-bold text-xl">
+      Docs
+     </span>
+        </div>
+        <nav class="text-gray-300 text-sm">
+            <a class="block py-1 hover:text-white" href="#">
+                Git status display
+            </a>
+            <a class="block py-1 hover:text-white" href="#">
+                Not committed changes tracker
+            </a>
+            <!-- ... other navigation items ... -->
+            <a class="block py-1 hover:text-white" href="#">
+                Branch cleanup
+            </a>
+            <!-- ... other navigation items ... -->
+            <a class="block py-1 hover:text-white" href="#">
+                Privacy policy
+            </a>
+        </nav>
+    </div>
+    <!-- Main content -->
+    <div class="flex-1 p-10">
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-3xl font-bold">
+                Branch cleanup
+            </h1>
+            <div class="space-x-4">
+                <a class="text-blue-500 hover:text-blue-400" href="#">
+                    Home
+                </a>
+                <a class="text-blue-500 hover:text-blue-400" href="#">
+                    Docs
+                </a>
+            </div>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-lg">
+            <p class="text-sm mb-4">
+                Detects merged and non-merged but stale branches. Cleanup can be executed manually from
+                <span class="text-blue-500">
+       Git
+      </span>
+                &gt;
+                <span class="text-blue-500">
+       GitToolBox
+      </span>
+                /
+                <span class="text-blue-500">
+       Git
+      </span>
+                &gt;
+                <span class="text-blue-500">
+       Branches
+      </span>
+                &gt;
+                <span class="text-blue-500">
+       Cleanup
+      </span>
+                or automatically. Branches can be excluded using glob patterns.
+            </p>
+            <div class="bg-black p-4 rounded-lg">
+                <div class="flex items-center mb-2">
+                    <input class="mr-2" id="branch1" type="checkbox"/>
+                    <label class="text-sm" for="branch1">
+                        testing
+                    </label>
+                </div>
+                <!-- ... other branch items ... -->
+                <div class="flex items-center mb-2">
+                    <input class="mr-2" id="branch7" type="checkbox"/>
+                    <label class="text-sm" for="branch7">
+                        dev1 2 years ago
+                    </label>
+                </div>
+            </div>
+            <div class="flex justify-end mt-4">
+                <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded mr-2">
+                    Cancel
+                </button>
+                <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="text-gray-600 text-center p-4 absolute bottom-0 w-full">
+    © 2024 Lukasz Zielinski
+</footer>
+</body>
+</html>
